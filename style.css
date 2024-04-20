@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: androidFontLegal;
+    src: url(fonts/idroid.otf);
+}
+
+/* Color Theme Swatches in Hex */
+:root {
+    --android1hex: #031727;
+    --android2hex: #126872;
+    --android3hex: #0b897e;
+    --android4hex: #18C29C;
+    --android5hex: #88F9D4;
+}
+/* Zerando as margin e padding */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: var(--android5hex);
+}
+header {
+    height: 100px;
+    background-image: linear-gradient(to bottom, #0b897e, #126872);
+}
+header > h1 {
+    text-align: center;
+    color: var(--android5hex);
+}
+header > p {
+    text-align: center;
+}
+nav {
+    background-color: var(--android2hex);
+}
+nav > a {
+    color: var(--android5hex);
+    text-decoration: none;
+}
+main {
+    margin: auto;
+    width: 800px;
+    background-color: white;
+    border-radius: 0  0 15px 15px;
+}
+article > h1, h2 {
+    padding: 10px;
+    margin: 0px 10px;
+    text-align: left;
+    font-family: androidFontLegal;
+}
+article > h2 {
+    background-image: linear-gradient(to right, #88F9D4, white);
+}
+section {
+    padding: 10px;
+}
+section.videos {
+    margin: auto;
+}
+aside#curiosidade {
+    margin: 10px;
+    padding: 0px;
+    border-radius: 15px;
+    background-color: var(--android5hex);
+}
+aside#curiosidade > h2 {
+    margin: 0px;
+    border-radius: 15px 15px 0px 0px;
+    background-color: var(--android3hex);
+    color: var(--android5hex);
+}
+footer {
+    margin-top: 10px;
+    padding-top: 10px;
+    background-color: var(--android4hex);
+}
+footer > p {
+    text-align: center;
+}
+p {
+    text-align: justify;
+    text-indent: 30px;
+    padding: 10px;
+}
